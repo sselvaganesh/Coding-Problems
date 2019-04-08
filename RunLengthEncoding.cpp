@@ -8,9 +8,9 @@ std::string decode(const std::string& input){
 		}
 
 	std::string output;
-	unsigned count;
 	std::string::size_type sz;
-	count = std::stoi(input, &sz);
+
+	unsigned count = std::stoi(input, &sz);
 
 	while(count>0){
 		output = output+input[sz];
@@ -42,7 +42,6 @@ std::string encode(const std::string& input){
 			count++;
 			}
 		
-
 		}
 
 	output = output + std::to_string(count) + curChar;
@@ -52,10 +51,7 @@ std::string encode(const std::string& input){
 }
 
 
-
-
 int main(){
-
 
 	std::string inputStr = "AAAABBBCCDAASSSSSSSSSSS";
 	std::string encodedStr = encode(inputStr);

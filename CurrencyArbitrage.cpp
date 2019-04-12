@@ -77,7 +77,7 @@ bool determineArbitrage(const twoDimIntVec& currExcTbl, unsigned inpAmt, unsigne
 
 int main(){
 
-/*
+
 	twoDimIntVec currExcTbl = {
 					{1,  0.25,    0.2},	//USD		//Returns TRUE
 					{4,     1,   1.25},	//CAD
@@ -85,14 +85,13 @@ int main(){
 					};
 	unsigned inpAmt = 500;
 
-*/
+/*
 	twoDimIntVec currExcTbl = {
-					{1, 2, 0.5},		//USD
-					{0.5, 1, 0.25},		//CAD		//Returns FALSE
-					{2, 4, 1}		//EUR
+					{1,     2,    0.5},		//USD
+					{0.5,   1,    0.25},		//CAD		//Returns FALSE
+					{2,     4,    1}		//EUR
 					};
-	unsigned inpAmt = 5;
-
+	unsigned inpAmt = 5; */
 
 	unsigned inpCurr = 0;		//USD
 

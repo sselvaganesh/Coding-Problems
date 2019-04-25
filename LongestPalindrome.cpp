@@ -16,13 +16,13 @@ bool isPalindrome(const std::string& str){
 
 }
 
-std::string max(std::string s1, std::string s2){
+std::string max(const std::string& s1, const std::string& s2){
 
 	return s1.size()>s2.size()?s1:s2;
 }
 
 
-std::string helper(std::string input, unsigned len){
+std::string helper(const std::string& input, unsigned len){
 
 	if(len==1){
 		return input;
@@ -45,7 +45,7 @@ std::string getLongestPalindrome(const std::string& input){
 
 int main(){
 
-	std::string input = "banana";
+	std::string input = "bcdcb";
 
 	std::string output = getLongestPalindrome(input);
 

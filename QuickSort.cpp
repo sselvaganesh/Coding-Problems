@@ -15,31 +15,21 @@ void print(oneDimVec &input){
 
 int setPivot(oneDimVec& input, int start, int end){
 
-	int pivot=start;
+	int pivot = input[end];
+	int pIndex = start;
 
-	int i=start+1;
-	int j=end;
+	for(int i=start; i<end; i++){
 
-	while(j>i){
-
-		for(;j>i && input[pivot]>input[i]; i++){
+		if(input[i]<=pivot){
+			std::swap(input[i], input[pIndex]);
+			pIndex++;
 			}
-
-		for(;j>i && input[pivot]<input[j]; j--){
-			}
-		
-		std::swap(input[i], input[j]);
-			i++; j--;
 
 		}
 
+	std::swap(input[end], input[pIndex]);
 
-	if(input[pivot]>input[j]){
-		std::swap(input[pivot], input[j]);
-		pivot = j;
-
-	}
-	return pivot;
+	return pIndex;
 
 }
 

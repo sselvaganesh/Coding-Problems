@@ -51,7 +51,7 @@ std::string sort2(std::string& input){
 	int r=0, b=input.length()-1;
 	int i=0;
 
-	while(b>r && b>i){
+	while( b>=i){
 
 		if(input[i]=='R'){
 			std::swap(input[i], input[r]);

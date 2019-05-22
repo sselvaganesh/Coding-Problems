@@ -35,7 +35,7 @@ void maxHeap(oneDimVec &input, int length, int idx){
 
 	if(idx!=largest){
 		std::swap(input[idx], input[largest]);
-		maxHeap(input, length, idx);
+		maxHeap(input, length, largest);
 		}
 
 }

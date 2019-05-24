@@ -68,9 +68,9 @@ int main(){
 	strVec dictWords = { "quick", "brown", "the", "fox", "null"};	
 	std::string inpStr = "thequickbrownfoxquick";
 
-/*	strVec dictWords = { "bed", "bath", "bedbath", "and", "beyond"};
-	std::string inpStr = "bedbathandbeyonds";
-*/
+	//strVec dictWords = { "bed", "bath", "bedbath", "and", "beyond"};
+	//std::string inpStr = "bedbathandbeyonds";
+
 	std::string outputStr = strReFormation(dictWords, inpStr);
 
 	std::cout << outputStr << std::endl;
